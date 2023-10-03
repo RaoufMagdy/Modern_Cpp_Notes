@@ -1,0 +1,76 @@
+#include <iostream>
+#include <array> //C++11
+#include <algorithm>
+#include <numeric>
+
+
+
+// std::array
+// - Fixed size must be known at compile time.
+// - Direct element access.
+// - Provides access to the underlying raw array.
+// - Use instead of C raw array when possible.
+// - All iterators are available and do not invalidate.
+
+
+//std::array initialization:
+// - std::array<dataType, size> var { {1,2,3,4,5} } C++11
+// - std::array<dataType, size> var { 1,2,3,4,5 } C++14 and above
+
+
+
+int main(void)
+{
+	std::array<int, 5> arr1{1,2,5,3,5};
+	std::array<int, 5> arr2{11,22,33,44,55};
+	std::array<int, 5> arr3{56,31,363,44,55};
+	std::array<int, 10> arr4{1,2,3,4,5,4,6,4,7,3};
+
+
+	//std::array -> most common methods can be found in:
+	// https://en.cppreference.com/w/cpp/container/array
+	std::cout<<arr1.size()<<std::endl;  // 5
+	std::cout<<arr1[2]<<std::endl;      // 3
+	std::cout<<arr1.front()<<std::endl; // 1 (first element)
+	std::cout<<arr1.back()<<std::endl;  // 5 (last element)
+	std::cout<<arr1.empty()<<std::endl; // 0 (check if the array is empty)
+	arr1.swap(arr2); //swaps the two arrays
+	std::cout<<arr1.at(2)<<std::endl;   // 3
+
+	// we can also access an elemnt of the array with arr.at(): .at() also does bounds checking which is essential for safety
+	arr1.at(2) = 1000; //valid
+	arr1[6] = 5000; // valid and not safe (out of boundary)
+	// ====> arr1.at(6) = 2000; //invalid (out of range)!
+    arr1.fill(6969); // Assign the value 6969 to all elements of the array.
+	//to access the elements of the std::array through a pointer we use .data():
+	int *ptr1 = arr1.data();
+	std::cout<<ptr1<<"   "<<&arr1[0]<<std::endl; // now ptr1 has the base address of arr1
+
+	//Sorting:
+	std::sort(arr3.begin(), arr3.end());
+
+	//finding min and max elements:
+	std::array<int,5>::iterator iterator1 = std::min_element(arr3.begin(), arr3.end());
+	auto iterator2 = std::max_element(arr3.begin(), arr3.end());
+
+	//find adjacent element in std::array:
+	auto adjacent = std::adjacent_find(arr1.begin(), arr1.end());
+	std::array<int,5>::iterator adj = std::adjacent_find(arr1.begin(), arr1.end());
+
+	//Sum (accumulate) all the elements of the std::array: #include <numeric>
+	// the last parameter is the starting addition number, start adding with zero then all other elements
+	int Sum = std::accumulate(arr1.begin(), arr1.end(),0);
+
+	//Count the number of presence of a specific value in all the elements of the array:
+	int cnt = std::count(arr4.begin(), arr4.end(), 4);
+	// Note that we can write lambda expression instead of the last parameter so we can get a value we want
+	// such as how many numbers less than 1 in that array
+	int cnt = std::count(arr4.begin(), arr4.end(), [](int x){ return (x<1); });
+	std::cout<<"It presented "<<cnt<<" times"<<std::endl;
+
+
+
+	return 0;
+}
+
+

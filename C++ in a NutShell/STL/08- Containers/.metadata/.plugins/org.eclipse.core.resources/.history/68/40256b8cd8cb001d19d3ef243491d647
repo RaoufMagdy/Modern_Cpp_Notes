@@ -1,0 +1,98 @@
+#include <iostream>
+#include <list>
+#include <forward_list>
+
+// std::list:
+// - Dynamic size.
+// - Bidirectional (doubly linked list).
+// - Direct memory access is NOT provided.
+// - Rapid insertion and deletion of elements anywhere in the container (constant time).
+// - All iterators are available and invalidate when the corresponding element is deleted.
+// - https://en.cppreference.com/w/cpp/container/list
+
+// std::forward_list:
+// - Dynamic size.
+// - uni-directional
+// - less overhead than std::list
+// - Direct memory access is NOT provided.
+// - Rapid insertion and deletion of elements anywhere in the container (constant time).
+// - Reverse iterators are NOT available and other iterators invalidate when the corresponding element is deleted.
+// - https://en.cppreference.com/w/cpp/container/forward_list
+
+
+
+class Person{
+private:
+    int age;
+    std::string name;
+
+public:
+    Person() = default;
+
+    Person(std::string Name, int Age)
+    {
+        name = Name;
+        age = Age;
+    }
+
+    ~Person() {}
+
+    friend std::ostream& operator << (std::ostream& os, const Person& obj)
+    {
+        os<<obj.name<<" is "<<obj.age<<" years old"<<std::endl;
+        return os;
+    }
+
+    void operator = (const Person& obj)
+    {
+    	age = obj.age;
+    	name = obj.name;
+    }
+
+
+};
+
+
+// Very Important Note when using classes with STL we have to overload default constructor and other operators that will be used later
+// with this class
+
+
+int main(void)
+{
+	//list:
+	//initialization:
+	std::list<int> l{1,2,3,4,5};
+	std::list<int> ll(10,5); //initialize 10 elements in ll with values = 5 for all elements.
+
+
+	Person player1 {"Ahmed",21};
+	Person player2 {"7sen",18};
+
+	std::list<Person> Players;
+
+	Players.push_back(player1);
+
+	auto it = Players.begin(); //it = iterator
+
+	it = Players.insert(it,{"Mohamed",21});
+
+	Players.emplace(Players.begin(),player2);
+
+
+
+	// forward_list:
+	std::forward_list<int> f_l{1,2,3,4,5,5,6};
+
+	// f_l.size(); ====> not available.
+	// f_l.back(); ====> not available.
+
+	// pop_front, push_front, emplace_front are available Modifiers, push_back, pop_back... are not available.
+
+
+
+	return 0;
+}
+
+
+
+

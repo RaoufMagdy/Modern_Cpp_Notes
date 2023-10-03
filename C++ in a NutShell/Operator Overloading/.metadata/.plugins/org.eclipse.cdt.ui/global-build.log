@@ -1,0 +1,2201 @@
+22:26:35 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Operator_Overloading.exe main.o 
+Info: Nothing to build for Operator_Overloading
+Info: Nothing to build for Operator_Overloading
+22:53:51 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:261:1: warning: control reaches end of non-void function [-Wreturn-type]
+  261 | }
+      | ^
+g++ -o Operator_Overloading.exe main.o 
+Info: Nothing to build for Operator_Overloading
+23:07:14 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:261:1: warning: control reaches end of non-void function [-Wreturn-type]
+  261 | }
+      | ^
+g++ -o Operator_Overloading.exe main.o 
+Info: Nothing to build for Operator_Overloading
+23:07:47 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:261:1: warning: control reaches end of non-void function [-Wreturn-type]
+  261 | }
+      | ^
+g++ -o Operator_Overloading.exe main.o 
+Info: Nothing to build for Operator_Overloading
+23:52:15 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'std::ostream& operator<<(std::ostream&, const Complex&)':
+..\main.cpp:290:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  290 | }
+      | ^
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:282:1: warning: control reaches end of non-void function [-Wreturn-type]
+  282 | }
+      | ^
+g++ -o Operator_Overloading.exe main.o 
+23:52:48 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'std::ostream& operator<<(std::ostream&, const Complex&)':
+..\main.cpp:290:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  290 | }
+      | ^
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:282:1: warning: control reaches end of non-void function [-Wreturn-type]
+  282 | }
+      | ^
+g++ -o Operator_Overloading.exe main.o 
+23:52:57 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'std::ostream& operator<<(std::ostream&, const Complex&)':
+..\main.cpp:290:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  290 | }
+      | ^
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:282:1: warning: control reaches end of non-void function [-Wreturn-type]
+  282 | }
+      | ^
+g++ -o Operator_Overloading.exe main.o 
+23:53:37 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:282:1: warning: control reaches end of non-void function [-Wreturn-type]
+  282 | }
+      | ^
+g++ -o Operator_Overloading.exe main.o 
+23:53:44 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:282:1: warning: control reaches end of non-void function [-Wreturn-type]
+  282 | }
+      | ^
+g++ -o Operator_Overloading.exe main.o 
+23:56:27 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'std::istream& operator<<(std::istream&, const Complex&)':
+..\main.cpp:297:18: error: 'int Complex::real' is private within this context
+  297 |         in >> c1.real;
+      |                  ^~~~
+..\main.cpp:7:13: note: declared private here
+    7 |         int real;
+      |             ^~~~
+..\main.cpp:297:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'const int')
+  297 |         in >> c1.real;
+      |         ~~ ^~ ~~~~~~~
+      |         |        |
+      |         |        const int
+      |         std::istream {aka std::basic_istream<char>}
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'} [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]' (near match)
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'} [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::ios_base& (*)(std::ios_base&)' [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'short int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'short unsigned int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: binding reference of type 'int&' to 'const int' discards qualifiers
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'unsigned int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long unsigned int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long long int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long long unsigned int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'float&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'double&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long double&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:297:18: error: cannot bind rvalue '(void*)((long long int)((int)c1.Complex::real))' to 'void*&'
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' (near match)
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'} [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:297:12: note: candidate: 'operator>>(int, int)' (built-in)
+  297 |         in >> c1.real;
+      |         ~~~^~~~~~~~~~
+..\main.cpp:297:12: note:   no known conversion for argument 1 from 'std::istream' {aka 'std::basic_istream<char>'} to 'int'
+In file included from c:\e\mingw64\include\c++\11.3.0\string:56,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\locale_classes.h:40,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\ios_base.h:41,
+                 from c:\e\mingw64\include\c++\11.3.0\ios:42,
+                 from c:\e\mingw64\include\c++\11.3.0\ostream:38,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:39,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+  297 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\istream:995,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   deduced conflicting types for parameter '_CharT' ('char' and 'const int')
+  297 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'unsigned char&'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'signed char&'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   mismatched types '_CharT*' and 'int'
+  297 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'unsigned char*'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'signed char*'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note:   template argument deduction/substitution failed:
+c:\e\mingw64\include\c++\11.3.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const int&]':
+..\main.cpp:297:11:   required from here
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\main.cpp:298:18: error: 'int Complex::imag' is private within this context
+  298 |         in >> c1.imag;
+      |                  ^~~~
+..\main.cpp:8:13: note: declared private here
+    8 |         int imag;
+      |             ^~~~
+..\main.cpp:298:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'const int')
+  298 |         in >> c1.imag;
+      |         ~~ ^~ ~~~~~~~
+      |         |        |
+      |         |        const int
+      |         std::istream {aka std::basic_istream<char>}
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'} [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]' (near match)
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'} [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'std::ios_base& (*)(std::ios_base&)' [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'short int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'short unsigned int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: binding reference of type 'int&' to 'const int' discards qualifiers
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'unsigned int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long unsigned int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long long int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long long unsigned int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'float&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'double&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long double&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:298:18: error: cannot bind rvalue '(void*)((long long int)((int)c1.Complex::imag))' to 'void*&'
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' (near match)
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'} [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:298:12: note: candidate: 'operator>>(int, int)' (built-in)
+  298 |         in >> c1.imag;
+      |         ~~~^~~~~~~~~~
+..\main.cpp:298:12: note:   no known conversion for argument 1 from 'std::istream' {aka 'std::basic_istream<char>'} to 'int'
+In file included from c:\e\mingw64\include\c++\11.3.0\string:56,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\locale_classes.h:40,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\ios_base.h:41,
+                 from c:\e\mingw64\include\c++\11.3.0\ios:42,
+                 from c:\e\mingw64\include\c++\11.3.0\ostream:38,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:39,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+  298 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\istream:995,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   deduced conflicting types for parameter '_CharT' ('char' and 'const int')
+  298 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'unsigned char&'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'signed char&'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   mismatched types '_CharT*' and 'int'
+  298 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'unsigned char*'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'signed char*'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note:   template argument deduction/substitution failed:
+c:\e\mingw64\include\c++\11.3.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const int&]':
+..\main.cpp:298:11:   required from here
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:282:1: warning: control reaches end of non-void function [-Wreturn-type]
+  282 | }
+      | ^
+23:56:52 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'std::istream& operator<<(std::istream&, const Complex&)':
+..\main.cpp:297:18: error: 'int Complex::real' is private within this context
+  297 |         in >> c1.real;
+      |                  ^~~~
+..\main.cpp:7:13: note: declared private here
+    7 |         int real;
+      |             ^~~~
+..\main.cpp:297:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'const int')
+  297 |         in >> c1.real;
+      |         ~~ ^~ ~~~~~~~
+      |         |        |
+      |         |        const int
+      |         std::istream {aka std::basic_istream<char>}
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'} [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]' (near match)
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'} [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::ios_base& (*)(std::ios_base&)' [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'short int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'short unsigned int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: binding reference of type 'int&' to 'const int' discards qualifiers
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'unsigned int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long unsigned int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long long int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long long unsigned int&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'float&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'double&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long double&' to a value of type 'int'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:297:18: error: cannot bind rvalue '(void*)((long long int)((int)c1.Complex::real))' to 'void*&'
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' (near match)
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'} [-fpermissive]
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:297:12: note: candidate: 'operator>>(int, int)' (built-in)
+  297 |         in >> c1.real;
+      |         ~~~^~~~~~~~~~
+..\main.cpp:297:12: note:   no known conversion for argument 1 from 'std::istream' {aka 'std::basic_istream<char>'} to 'int'
+In file included from c:\e\mingw64\include\c++\11.3.0\string:56,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\locale_classes.h:40,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\ios_base.h:41,
+                 from c:\e\mingw64\include\c++\11.3.0\ios:42,
+                 from c:\e\mingw64\include\c++\11.3.0\ostream:38,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:39,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+  297 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\istream:995,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   deduced conflicting types for parameter '_CharT' ('char' and 'const int')
+  297 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'unsigned char&'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'signed char&'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   mismatched types '_CharT*' and 'int'
+  297 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'unsigned char*'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'signed char*'
+  297 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note:   template argument deduction/substitution failed:
+c:\e\mingw64\include\c++\11.3.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const int&]':
+..\main.cpp:297:11:   required from here
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\main.cpp:298:18: error: 'int Complex::imag' is private within this context
+  298 |         in >> c1.imag;
+      |                  ^~~~
+..\main.cpp:8:13: note: declared private here
+    8 |         int imag;
+      |             ^~~~
+..\main.cpp:298:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'const int')
+  298 |         in >> c1.imag;
+      |         ~~ ^~ ~~~~~~~
+      |         |        |
+      |         |        const int
+      |         std::istream {aka std::basic_istream<char>}
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'} [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]' (near match)
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'} [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'std::ios_base& (*)(std::ios_base&)' [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'short int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'short unsigned int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: binding reference of type 'int&' to 'const int' discards qualifiers
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'unsigned int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long unsigned int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long long int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long long unsigned int&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'float&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'double&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: cannot bind non-const lvalue reference of type 'long double&' to a value of type 'int'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:298:18: error: cannot bind rvalue '(void*)((long long int)((int)c1.Complex::imag))' to 'void*&'
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' (near match)
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:298:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'} [-fpermissive]
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:298:12: note: candidate: 'operator>>(int, int)' (built-in)
+  298 |         in >> c1.imag;
+      |         ~~~^~~~~~~~~~
+..\main.cpp:298:12: note:   no known conversion for argument 1 from 'std::istream' {aka 'std::basic_istream<char>'} to 'int'
+In file included from c:\e\mingw64\include\c++\11.3.0\string:56,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\locale_classes.h:40,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\ios_base.h:41,
+                 from c:\e\mingw64\include\c++\11.3.0\ios:42,
+                 from c:\e\mingw64\include\c++\11.3.0\ostream:38,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:39,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+  298 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\istream:995,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   deduced conflicting types for parameter '_CharT' ('char' and 'const int')
+  298 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'unsigned char&'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'signed char&'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   mismatched types '_CharT*' and 'int'
+  298 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'unsigned char*'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\main.cpp:298:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'signed char*'
+  298 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note:   template argument deduction/substitution failed:
+c:\e\mingw64\include\c++\11.3.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const int&]':
+..\main.cpp:298:11:   required from here
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\main.cpp: In function 'int operator&(const Complex&, const Complex&)':
+..\main.cpp:282:1: warning: control reaches end of non-void function [-Wreturn-type]
+  282 | }
+      | ^
+23:58:29 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'std::istream& operator<<(std::istream&, const Complex&)':
+..\main.cpp:296:18: error: 'int Complex::real' is private within this context
+  296 |         in >> c1.real;
+      |                  ^~~~
+..\main.cpp:7:13: note: declared private here
+    7 |         int real;
+      |             ^~~~
+..\main.cpp:296:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'const int')
+  296 |         in >> c1.real;
+      |         ~~ ^~ ~~~~~~~
+      |         |        |
+      |         |        const int
+      |         std::istream {aka std::basic_istream<char>}
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'} [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]' (near match)
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'} [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'std::ios_base& (*)(std::ios_base&)' [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'short int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'short unsigned int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: binding reference of type 'int&' to 'const int' discards qualifiers
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'unsigned int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long unsigned int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long long int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long long unsigned int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'float&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'double&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long double&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:296:18: error: cannot bind rvalue '(void*)((long long int)((int)c1.Complex::real))' to 'void*&'
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' (near match)
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'} [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:296:12: note: candidate: 'operator>>(int, int)' (built-in)
+  296 |         in >> c1.real;
+      |         ~~~^~~~~~~~~~
+..\main.cpp:296:12: note:   no known conversion for argument 1 from 'std::istream' {aka 'std::basic_istream<char>'} to 'int'
+In file included from c:\e\mingw64\include\c++\11.3.0\string:56,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\locale_classes.h:40,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\ios_base.h:41,
+                 from c:\e\mingw64\include\c++\11.3.0\ios:42,
+                 from c:\e\mingw64\include\c++\11.3.0\ostream:38,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:39,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+  296 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\istream:995,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   deduced conflicting types for parameter '_CharT' ('char' and 'const int')
+  296 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'unsigned char&'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'signed char&'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   mismatched types '_CharT*' and 'int'
+  296 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'unsigned char*'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'signed char*'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note:   template argument deduction/substitution failed:
+c:\e\mingw64\include\c++\11.3.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const int&]':
+..\main.cpp:296:11:   required from here
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\main.cpp:297:18: error: 'int Complex::imag' is private within this context
+  297 |         in >> c1.imag;
+      |                  ^~~~
+..\main.cpp:8:13: note: declared private here
+    8 |         int imag;
+      |             ^~~~
+..\main.cpp:297:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'const int')
+  297 |         in >> c1.imag;
+      |         ~~ ^~ ~~~~~~~
+      |         |        |
+      |         |        const int
+      |         std::istream {aka std::basic_istream<char>}
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'} [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]' (near match)
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'} [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::ios_base& (*)(std::ios_base&)' [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'short int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'short unsigned int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: binding reference of type 'int&' to 'const int' discards qualifiers
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'unsigned int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long unsigned int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long long int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long long unsigned int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'float&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'double&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long double&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:297:18: error: cannot bind rvalue '(void*)((long long int)((int)c1.Complex::imag))' to 'void*&'
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' (near match)
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'} [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:297:12: note: candidate: 'operator>>(int, int)' (built-in)
+  297 |         in >> c1.imag;
+      |         ~~~^~~~~~~~~~
+..\main.cpp:297:12: note:   no known conversion for argument 1 from 'std::istream' {aka 'std::basic_istream<char>'} to 'int'
+In file included from c:\e\mingw64\include\c++\11.3.0\string:56,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\locale_classes.h:40,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\ios_base.h:41,
+                 from c:\e\mingw64\include\c++\11.3.0\ios:42,
+                 from c:\e\mingw64\include\c++\11.3.0\ostream:38,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:39,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+  297 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\istream:995,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   deduced conflicting types for parameter '_CharT' ('char' and 'const int')
+  297 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'unsigned char&'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'signed char&'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   mismatched types '_CharT*' and 'int'
+  297 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'unsigned char*'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'signed char*'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note:   template argument deduction/substitution failed:
+c:\e\mingw64\include\c++\11.3.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const int&]':
+..\main.cpp:297:11:   required from here
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+23:59:31 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'std::istream& operator>>(std::istream&, const Complex&)':
+..\main.cpp:296:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'const int')
+  296 |         in >> c1.real;
+      |         ~~ ^~ ~~~~~~~
+      |         |        |
+      |         |        const int
+      |         std::istream {aka std::basic_istream<char>}
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'} [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]' (near match)
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'} [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'std::ios_base& (*)(std::ios_base&)' [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'short int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'short unsigned int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: binding reference of type 'int&' to 'const int' discards qualifiers
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'unsigned int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long unsigned int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long long int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long long unsigned int&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'float&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'double&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: cannot bind non-const lvalue reference of type 'long double&' to a value of type 'int'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:296:18: error: cannot bind rvalue '(void*)((long long int)((int)c1.Complex::real))' to 'void*&'
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' (near match)
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:296:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'} [-fpermissive]
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:296:12: note: candidate: 'operator>>(int, int)' (built-in)
+  296 |         in >> c1.real;
+      |         ~~~^~~~~~~~~~
+..\main.cpp:296:12: note:   no known conversion for argument 1 from 'std::istream' {aka 'std::basic_istream<char>'} to 'int'
+In file included from c:\e\mingw64\include\c++\11.3.0\string:56,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\locale_classes.h:40,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\ios_base.h:41,
+                 from c:\e\mingw64\include\c++\11.3.0\ios:42,
+                 from c:\e\mingw64\include\c++\11.3.0\ostream:38,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:39,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+  296 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\istream:995,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   deduced conflicting types for parameter '_CharT' ('char' and 'const int')
+  296 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'unsigned char&'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'signed char&'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   mismatched types '_CharT*' and 'int'
+  296 |         in >> c1.real;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'unsigned char*'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\main.cpp:296:18: note:   cannot convert 'c1.Complex::real' (type 'const int') to type 'signed char*'
+  296 |         in >> c1.real;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note:   template argument deduction/substitution failed:
+c:\e\mingw64\include\c++\11.3.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const int&]':
+..\main.cpp:296:11:   required from here
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\main.cpp:293:15: note: candidate: 'std::istream& operator>>(std::istream&, const Complex&)'
+  293 | std::istream& operator >> (std::istream& in, const Complex& c1){
+      |               ^~~~~~~~
+..\main.cpp:293:61: note:   no known conversion for argument 2 from 'const int' to 'const Complex&'
+  293 | std::istream& operator >> (std::istream& in, const Complex& c1){
+      |                                              ~~~~~~~~~~~~~~~^~
+..\main.cpp:297:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'const int')
+  297 |         in >> c1.imag;
+      |         ~~ ^~ ~~~~~~~
+      |         |        |
+      |         |        const int
+      |         std::istream {aka std::basic_istream<char>}
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:120:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'} [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]' (near match)
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:124:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'} [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:131:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::ios_base& (*)(std::ios_base&)' [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'short int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'short unsigned int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: binding reference of type 'int&' to 'const int' discards qualifiers
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'unsigned int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long unsigned int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long long int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long long unsigned int&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:214:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'float&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:218:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'double&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:222:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: cannot bind non-const lvalue reference of type 'long double&' to a value of type 'int'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:297:18: error: cannot bind rvalue '(void*)((long long int)((int)c1.Complex::imag))' to 'void*&'
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' (near match)
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:259:7: note:   conversion of argument 1 would be ill-formed:
+..\main.cpp:297:18: error: invalid conversion from 'int' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'} [-fpermissive]
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+      |                  |
+      |                  int
+..\main.cpp:297:12: note: candidate: 'operator>>(int, int)' (built-in)
+  297 |         in >> c1.imag;
+      |         ~~~^~~~~~~~~~
+..\main.cpp:297:12: note:   no known conversion for argument 1 from 'std::istream' {aka 'std::basic_istream<char>'} to 'int'
+In file included from c:\e\mingw64\include\c++\11.3.0\string:56,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\locale_classes.h:40,
+                 from c:\e\mingw64\include\c++\11.3.0\bits\ios_base.h:41,
+                 from c:\e\mingw64\include\c++\11.3.0\ios:42,
+                 from c:\e\mingw64\include\c++\11.3.0\ostream:38,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:39,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+  297 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\istream:995,
+                 from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   deduced conflicting types for parameter '_CharT' ('char' and 'const int')
+  297 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'unsigned char&'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'signed char&'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   mismatched types '_CharT*' and 'int'
+  297 |         in >> c1.imag;
+      |                  ^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'unsigned char*'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\main.cpp:297:18: note:   cannot convert 'c1.Complex::imag' (type 'const int') to type 'signed char*'
+  297 |         in >> c1.imag;
+      |               ~~~^~~~
+In file included from c:\e\mingw64\include\c++\11.3.0\iostream:40,
+                 from ..\main.cpp:1:
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: note:   template argument deduction/substitution failed:
+c:\e\mingw64\include\c++\11.3.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const int&]':
+..\main.cpp:297:11:   required from here
+c:\e\mingw64\include\c++\11.3.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\main.cpp:293:15: note: candidate: 'std::istream& operator>>(std::istream&, const Complex&)'
+  293 | std::istream& operator >> (std::istream& in, const Complex& c1){
+      |               ^~~~~~~~
+..\main.cpp:293:61: note:   no known conversion for argument 2 from 'const int' to 'const Complex&'
+  293 | std::istream& operator >> (std::istream& in, const Complex& c1){
+      |                                              ~~~~~~~~~~~~~~~^~
+23:59:53 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'std::istream& operator>>(std::istream&, Complex&)':
+..\main.cpp:296:18: error: 'int Complex::real' is private within this context
+  296 |         in >> c1.real;
+      |                  ^~~~
+..\main.cpp:7:13: note: declared private here
+    7 |         int real;
+      |             ^~~~
+..\main.cpp:296:18: note: field 'int Complex::real' can be accessed via 'int Complex::GetReal()'
+  296 |         in >> c1.real;
+      |                  ^~~~
+      |                  GetReal()
+..\main.cpp:297:18: error: 'int Complex::imag' is private within this context
+  297 |         in >> c1.imag;
+      |                  ^~~~
+..\main.cpp:8:13: note: declared private here
+    8 |         int imag;
+      |             ^~~~
+..\main.cpp:297:18: note: field 'int Complex::imag' can be accessed via 'int Complex::GetImag()'
+  297 |         in >> c1.imag;
+      |                  ^~~~
+      |                  GetImag()
+00:01:59 **** Incremental Build of configuration Debug for project Operator_Overloading ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Operator_Overloading.exe main.o 

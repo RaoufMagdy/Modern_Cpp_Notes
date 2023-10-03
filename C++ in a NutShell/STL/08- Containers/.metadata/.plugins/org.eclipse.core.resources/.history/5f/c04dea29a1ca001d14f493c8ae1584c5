@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+
+
+
+
+
+// std::vector:
+// - Vector has dynamic size handled automatically, can expand or contranct, elements are stored in contiguous memory as in array
+// - Direct memory access (constant accessing time).
+// - Rapid insertion and deletion at the BACK (constant time).
+// - Insertion or removal of elements (linear time).
+// - All iterators available and may invalidate.
+
+// more info at: https://en.cppreference.com/w/cpp/container/vector
+
+
+
+int main(void)
+{
+
+
+
+
+	return 0;
+}
+
+
+

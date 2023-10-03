@@ -1,0 +1,86 @@
+#include <iostream>
+
+
+
+class Counter  /* Base Class */
+{
+private:
+	uint32_t count;
+public:
+	Counter() : count(0)
+	{ }
+
+	Counter(int c) : count(c)
+	{ }
+
+	uint32_t getCount() const
+	{
+		return count;
+	}
+
+	Counter operator ++ ()
+	{
+		return Counter(++count);
+	}
+};
+
+
+
+class CountDn : public Counter  /* Derived Class */
+{
+	/*
+	 *  Note:
+	 * 		CountDn class inherits all the features of the Counter class.
+	 *		CountDn doesn’t need a constructor or the get_count() or operator++() functions, because
+	 *		these already exist in Counter.
+	 *
+	 */
+
+public:
+	Counter operator -- ()
+	{
+		return Counter(--count);
+	}
+};
+
+
+
+int main(void)
+{
+
+	CountDn c1; //c1 of class CountDn
+
+	/*
+	 *
+	 *  There is no constructor in the CountDn class specifier, so what entity carries
+	 * 	out the initialization? It turns out that—at least under certain circumstances—if you don’t specify
+	 *	a constructor, the derived class will use an appropriate constructor from the base class
+	 *
+	 */
+
+	std::cout << "\nc1=" << c1.getCount(); //display c1
+
+	++c1;
+	++c1;
+	++c1; //increment c1, 3 times
+
+	/*
+	 *  The object c1 of the CountDn class also uses the operator++() and get_count() functions
+	 *	from the Counter class. The first is used to increment c1.
+	 */
+
+	std::cout << "\nc1=" << c1.getCount(); //display it
+
+	--c1; --c1; //decrement c1, twice
+	std::cout << "\nc1=" << c1.getCount(); //display it
+
+	std::cout << std::endl;
+
+
+	return 0;
+}
+
+
+
+
+

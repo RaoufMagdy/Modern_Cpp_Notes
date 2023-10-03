@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+
+
+
+
+
+//[captured_variables] () -> return_type { /* Code */ };
+//         |
+//     Defines what information/variables should bbe captured.
+
+
+
+
+
+int main(void)
+{
+
+
+
+
+	return 0;
+}
+
+
+

@@ -1,0 +1,32 @@
+#include <iostream>
+#include <list>
+
+
+// std::list:
+// - Dynamic size.
+// - Bidirectional (doubly linked list).
+// - Direct memory access is NOT provided.
+// - Rapid insertion and deletion of elements anywhere in the container (constant time).
+
+
+
+
+
+
+
+
+
+
+
+
+int main(void)
+{
+
+
+
+	return 0;
+}
+
+
+
+

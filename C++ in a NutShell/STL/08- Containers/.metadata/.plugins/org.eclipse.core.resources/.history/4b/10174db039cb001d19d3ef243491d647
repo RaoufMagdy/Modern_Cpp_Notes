@@ -1,0 +1,110 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+
+
+
+
+
+// std::vector:
+// - Vector has dynamic size handled automatically, can expand or contranct, elements are stored in contiguous memory as in array
+// - Direct memory access (constant accessing time).
+// - Rapid insertion and deletion at the BACK (constant time).
+// - Insertion or removal of elements (linear time).
+// - All iterators available and may invalidate.
+
+// more info at: https://en.cppreference.com/w/cpp/container/vector
+
+// Note that std::vector is pretty much the same as std::array but with some differences such as
+// it has dynamic size and can carry user-defined types..
+
+// Here is a quick example on how vectors work and it will be updated ISA.
+
+class Person{
+private:
+    int age;
+    std::string name;
+
+public:
+    Person() = default;
+
+    Person(std::string Name, int Age)
+    {
+        name = Name;
+        age = Age;
+    }
+
+    ~Person() {}
+
+    friend std::ostream& operator << (std::ostream& os, const Person& obj)
+    {
+        os<<obj.name<<" is "<<obj.age<<" years old"<<std::endl;
+        return os;
+    }
+
+    Person& operator = (Person& obj)
+    {
+    	age = obj.age;
+    	name = obj.name;
+
+    	return obj;
+    }
+
+
+};
+
+
+int main()
+{
+    // Create a vector containing integers
+    std::vector<int> v = {7, 5, 16, 8};
+    std::vector<Person> vec = { {"Ahmed",15}, {"Ibrahim",20}, {"Maghraby",21} };
+
+    Person Mohamed{"Mohamed",22};
+
+    std::cout << "v = { ";
+    for (auto n : vec)
+        std::cout << n << " ";
+    std::cout << "}; \n";
+    std::cout<<std::endl;
+
+    // Add two more integers to vector
+    v.push_back(25);
+    v.push_back(13);
+
+    vec.push_back(Person{"Raouf",25});
+
+
+    // Print out the vector
+    std::cout << "v = { ";
+    for (int n : v)
+        std::cout << n << ", ";
+    std::cout << "}; \n";
+    std::cout<<std::endl;
+
+    std::cout << "v = { ";
+    for (auto n : vec)
+        std::cout << n << " ";
+    std::cout << "}; \n";
+    std::cout<<std::endl;
+
+    vec.pop_back();
+
+     std::cout << "v = { ";
+    for (auto n : vec)
+        std::cout << n << " ";
+    std::cout << "}; \n";
+    std::cout<<std::endl;
+
+    auto it = v.emplace(v.begin(), Mohamed);
+
+    for (auto n : vec)
+            std::cout << n << " ";
+        std::cout << "}; \n";
+        std::cout<<std::endl;
+
+
+}
+
+

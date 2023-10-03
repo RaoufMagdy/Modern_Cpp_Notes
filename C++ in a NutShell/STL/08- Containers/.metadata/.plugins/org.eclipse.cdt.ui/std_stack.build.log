@@ -1,0 +1,10 @@
+10:19:38 **** Incremental Build of configuration Debug for project std_stack ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:86:17: error: 'class std::stack<Person, std::vector<Person> >' has no member named 'back'
+   86 |         Players.back();
+      |                 ^~~~
+
+10:19:39 Build Failed. 1 errors, 0 warnings. (took 786ms)
+

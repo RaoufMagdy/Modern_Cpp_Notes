@@ -1,0 +1,13 @@
+01:02:23 **** Incremental Build of configuration Debug for project Virtual_Function ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Virtual_Function.exe main.o 
+Info: Nothing to build for Virtual_Function
+01:03:07 **** Incremental Build of configuration Debug for project Virtual_Function ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Virtual_Function.exe main.o 
+01:03:24 **** Incremental Build of configuration Debug for project Virtual_Function ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Virtual_Function.exe main.o 

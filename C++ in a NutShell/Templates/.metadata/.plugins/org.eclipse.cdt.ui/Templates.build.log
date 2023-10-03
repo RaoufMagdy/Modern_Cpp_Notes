@@ -1,0 +1,18 @@
+17:30:09 **** Rebuild of configuration Debug for project Templates ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:161:32: warning: "/*" within comment [-Wcomment]
+  161 |                 class InchesEx /*exception class
+      |                                 
+..\main.cpp:166:40: warning: "/*" within comment [-Wcomment]
+  166 |                         string origin; /* for name of routine
+      |                                         
+..\main.cpp:167:40: warning: "/*" within comment [-Wcomment]
+  167 |                         float iValue;  /* for faulty inches value
+      |                                         
+g++ -o Templates.exe main.o 
+c:/e/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: c:/e/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.3.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+
+17:30:10 Build Failed. 1 errors, 3 warnings. (took 810ms)
+

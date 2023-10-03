@@ -1,0 +1,13 @@
+20:38:16 **** Incremental Build of configuration Debug for project Inheritance ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Inheritance.exe main.o 
+Info: Nothing to build for Inheritance
+20:38:42 **** Incremental Build of configuration Debug for project Inheritance ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Inheritance.exe main.o 
+20:39:23 **** Incremental Build of configuration Debug for project Inheritance ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Inheritance.exe main.o 

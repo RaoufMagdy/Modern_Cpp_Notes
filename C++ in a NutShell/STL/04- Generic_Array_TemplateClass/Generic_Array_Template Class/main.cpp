@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+
+
+
+template<typename T,int N>
+class Array{
+private:
+	int size{N};
+	T values[N];
+
+	friend std::ostream& operator << (std::ostream& os, const Array<T,N>& arr)
+	{
+		os<<"[";
+		for(const auto &val : arr.values)
+		{
+			os<<val<<" ";
+		}
+		os<<"]"<<std::endl;
+
+		return os;
+	}
+
+public:
+
+	Array() = default;
+
+	Array(T init_val)
+	{
+		for(auto& item : values)
+			item = init_val;
+
+	}
+
+	void fill(T val)
+	{
+		for(auto &item:values)
+		{
+			item = val;
+		}
+	}
+
+	int get_size() const
+	{
+		return size;
+	}
+
+
+	T& operator[](int index)
+	{
+		return values[index];
+	}
+
+};
+
+
+
+
+int main(void)
+{
+	Array<std::string, 5> nums;
+
+	std::cout<<"The size of nums is = "<<nums.get_size()<<std::endl;
+	std::cout<<nums<<std::endl;
+
+	nums.fill("A");
+	std::cout<<nums<<std::endl;
+
+	nums.fill("Ahmed El3araby Sona3 el seqa");
+	std::cout<<nums<<std::endl;
+
+	nums[0] = "Raouf";
+	nums[3] = "Raouf++";
+	std::cout<<nums<<std::endl;
+
+
+	return 0;
+}
+
+
+

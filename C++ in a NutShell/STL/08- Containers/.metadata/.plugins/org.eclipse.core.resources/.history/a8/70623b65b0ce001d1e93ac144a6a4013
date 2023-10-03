@@ -1,0 +1,116 @@
+#include <iostream>
+#include <algorithm>
+#include <set>
+#include <unordered_set>
+#include <string>
+
+
+// Associative containers:
+// - Collection of stored objects that allow fast retrieval using a key.
+// - STL provides Sets and Maps.
+// - Usually implemented as a balanced binary tree or hashsets.
+// - Most operators are very efficient.
+
+
+// std::set:
+// - Similar to mathematical sets.
+// - Ordered by key.
+// - No duplicated elements.
+// - All iterators available and invalidate when the corresponding element is deleted.
+
+
+
+
+class Person{
+private:
+    int age;
+    std::string name;
+
+public:
+    Person() = default;
+
+    Person(std::string Name, int Age)
+    {
+        name = Name;
+        age = Age;
+    }
+
+    friend std::ostream& operator << (std::ostream& os, const Person& obj)
+    {
+        os<<obj.name<<" is "<<obj.age<<" years old"<<std::endl;
+        return os;
+    }
+
+    void operator = (const Person& obj)
+    {
+    	age = obj.age;
+    	name = obj.name;
+    }
+
+    bool operator < (const Person& obj) const
+    {
+         return( (this->age < obj.age)&&(this->name < obj.name) );
+    }
+
+    bool operator > (const Person& obj) const
+    {
+         return( (this->age > obj.age)&&(this->name > obj.name) );
+    }
+
+
+    bool operator == (const Person& obj) const
+    {
+         return( (this->age == obj.age)&&(this->name == obj.name) );
+    }
+
+
+    ~Person() {}
+
+};
+
+
+int main(void)
+{
+	std::set<int> s{1,2,3,4,5};
+	std::set<std::string> ss
+	{
+		std::string {"Harry"},
+		             "Moe",
+		std::string {"Garry"}
+	};
+
+	ss.insert(std::string{"Ahmed"});
+	ss.insert(std::string{"Hady"});
+	ss.insert(std::string{"Ziad"});
+
+	ss.insert(std::string{"Moe"}); //Note that Moe will not be insterted as it is already there in the set
+
+	for(auto i:ss)
+	{
+		std::cout<<i<<std::endl;
+	}
+
+	std::cout<<"====================================="<<std::endl;
+
+	Person S1{"Fady",21} , S2{"Hady",22} , S3{"Samir",22} , S4{"Saher",26};
+	std::set<Person> Students{
+		S1,
+		S2,
+		S3,
+		S4
+		};
+
+
+	auto it = std::for_each(Students.begin(), Students.end(), [](Person x){std::cout<<x<<std::endl;});
+
+
+
+
+	return 0;
+}
+
+
+
+
+
+

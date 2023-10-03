@@ -1,0 +1,72 @@
+#include <iostream>
+#include <list>
+
+
+// std::list:
+// - Dynamic size.
+// - Bidirectional (doubly linked list).
+// - Direct memory access is NOT provided.
+// - Rapid insertion and deletion of elements anywhere in the container (constant time).
+// - All iterators are available and invalidate when the corresponding element is deleted.
+
+
+
+
+class Person{
+private:
+    int age;
+    std::string name;
+
+public:
+    Person() = default;
+
+    Person(std::string Name, int Age)
+    {
+        name = Name;
+        age = Age;
+    }
+
+    ~Person() {}
+
+    friend std::ostream& operator << (std::ostream& os, const Person& obj)
+    {
+        os<<obj.name<<" is "<<obj.age<<" years old"<<std::endl;
+        return os;
+    }
+
+    void operator = (const Person& obj)
+    {
+    	age = obj.age;
+    	name = obj.name;
+    }
+
+
+};
+
+
+
+
+
+int main(void)
+{
+	//initialization:
+	std::list<int> l{1,2,3,4,5};
+	std::list<int> ll(10,5); //initialize 10 elements in ll with values = 5 for all elements.
+
+
+	Person player1 {"Ahmed",21};
+	std::list<Person> Players;
+
+	Players.push_back(player1);
+
+	auto it = Players.begin();
+
+	Players.emplace(it,{"Mohamed",21});
+
+
+	return 0;
+}
+
+
+
+

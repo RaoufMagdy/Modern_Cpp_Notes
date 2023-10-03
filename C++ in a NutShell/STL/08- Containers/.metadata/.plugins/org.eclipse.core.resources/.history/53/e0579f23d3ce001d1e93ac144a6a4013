@@ -1,0 +1,88 @@
+#include <iostream>
+#include <stack>
+#include <algorithm>
+#include <string>
+
+
+
+// std::stack:
+// - LIFO data structure.
+// - Implemented as adapter container over other STL container (deque(default), vector, list).
+// - Operations occur on the top of the stack.
+// - No iterators are supported.
+
+
+class Person{
+private:
+    int age;
+    std::string name;
+
+public:
+    Person() = default;
+
+    Person(std::string Name, int Age)
+    {
+        name = Name;
+         age = Age;
+    }
+
+    friend std::ostream& operator << (std::ostream& os, const Person& obj)
+    {
+        os<<obj.name<<" is "<<obj.age<<" years old"<<std::endl;
+        return os;
+    }
+
+    void operator = (const Person& obj)
+    {
+    	 age = obj.age;
+    	name = obj.name;
+    }
+
+    bool operator < (const Person& obj) const
+    {
+         return( (this->age < obj.age)&&(this->name < obj.name) );
+    }
+
+    bool operator > (const Person& obj) const
+    {
+         return( (this->age > obj.age)&&(this->name > obj.name) );
+    }
+
+
+    bool operator == (const Person& obj) const
+    {
+         return( (this->age == obj.age)&&(this->name == obj.name) );
+    }
+
+
+    ~Person() {}
+
+};
+
+
+
+
+int main(void)
+{
+
+	Person P1{"Ahmed",21} , P2{"Mohamed",22}, P3{"Ali",25};
+	//std::stack<Person> Players; ===> By default Deque.
+	std::stack<Person, std::vector<Person> > Players;
+
+	Players.push(P1);
+	Players.push(P2);
+	Players.push(P3);
+	Players.push(Person{"Ibrahim",26});
+
+	std::cout<<Players.size()<<std::endl;
+
+	std::cout<<Players.top()<<std::endl;
+	Players.pop();
+	std::cout<<Players.top()<<std::endl;
+
+	return 0;
+}
+
+
+
+

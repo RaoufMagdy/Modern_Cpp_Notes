@@ -1,0 +1,342 @@
+#include <iostream>
+
+
+
+class Complex{
+private:
+	int real;
+	int imag;
+public:
+	Complex() : real(0), imag(0){
+
+	}
+
+    Complex(int r, int i){
+    	real = r;
+    	imag = i;
+    }
+
+    void SetReal(int R);
+    void SetImag(int I);
+    int GetReal();
+    int GetImag();
+
+    Complex AddClx(Complex& c1, Complex& c2){
+    	Complex X;
+    	X.real = c1.real + c2.real;
+    	X.imag = c1.imag + c2.imag;
+    	return X;
+    }
+
+     /* ===> Some Operators Overloading <=== */
+    friend Complex operator + (Complex& c1, Complex& c2);
+    friend Complex operator - (Complex& c1, Complex& c2);
+    friend Complex operator * (Complex& c1, Complex& c2);
+    friend Complex operator / (Complex& c1, Complex& c2);
+    /* =============================================== */
+    friend Complex operator += (Complex& c1, Complex& c2);
+    friend Complex operator -= (Complex& c1, Complex& c2);
+    friend Complex operator *= (Complex& c1, Complex& c2);
+    friend Complex operator /= (Complex& c1, Complex& c2);
+    /* =============================================== */
+    //friend Complex operator ++ (Complex& c1); //prefix
+    //friend Complex operator -- (Complex& c1); //prefix
+            //====> OR:
+    Complex& operator ++ (); //prefix
+    Complex& operator -- (); //prefix
+    /* =============================================== */
+    //friend Complex operator ++ (Complex& c1, int); //postfix, Note that the 2nd arg must be "int" datatype.
+    //friend Complex operator -- (Complex& c1, int); //postfix, Note that the 2nd arg must be "int" datatype.
+            //====> OR:
+    Complex& operator ++ (int); //postfix
+    Complex& operator -- (int); //postfix
+    /* =============================================== */
+    Complex& operator = (const Complex& c1); //note that "=" operator cannot be global so it cannot be friend
+    // The "=" and "&" operators are by default overloaded in C++
+    /* =============================================== */
+    friend int operator & (const Complex& c1, const Complex& c2);
+    /* =============================================== */
+
+
+    /* === Insertion and Extraction Overloading === */
+    //Note:
+    // "cout" is an object of "ostream" class and "cin" is an object of "istream" class.
+    // These operators must be overloaded as a global function.
+    // Why these operators must be overloaded as global?
+
+    /*
+     * In operator overloading, if an operator is overloaded as a member,
+     * then it must be a member of the object on the left side of the operator. For example,
+     * consider the statement “ob1 + ob2” (let ob1 and ob2 be objects of two different classes).
+     * To make this statement compile, we must overload ‘+’ in a class of ‘ob1’ or make ‘+’ a global function.
+     * The operators ‘<<‘ and ‘>>’ are called like ‘cout << ob1’ and ‘cin >> ob1’.
+     * So if we want to make them a member method, then they must be made members of ostream and istream classes,
+     * which is not a good option most of the time. Therefore, these operators are overloaded as global functions with two parameters,
+     * cout and object of user-defined class.
+     *
+     * */
+
+    friend std::ostream& operator << (std::ostream& out, const Complex& c1);
+    friend std::istream& operator >> (std::istream& in, Complex& c1);
+
+    ~Complex(){}
+
+};
+
+
+void Complex::SetReal(int R){
+	this -> real = R;
+}
+
+void Complex::SetImag(int I){
+	this -> imag = I;
+}
+
+int Complex::GetReal(){
+	return (this->real);
+}
+
+int Complex::GetImag(){
+	return (this -> imag);
+}
+
+//===================================Arithmatic=========================================//
+
+Complex operator + (Complex& c1, Complex& c2)
+{
+    Complex Y;
+    //I can use my class method AddClx:
+	Y = Y.AddClx(c1,c2);  //OR make it manually:
+
+	//Y.real = c1.real + c2.real;
+	//Y.imag = c1.imag + c2.imag;
+
+	std::cout<<Y.real<<" + "<<Y.imag<<"i"<<std::endl;
+	return Y;
+}
+
+Complex operator - (Complex& c1, Complex& c2)
+{
+    Complex Y;
+
+	Y.real = c1.real - c2.real;
+	Y.imag = c1.imag - c2.imag;
+
+	std::cout<<Y.real<<" + "<<Y.imag<<"i"<<std::endl;
+	return Y;
+}
+
+Complex operator * (Complex& c1, Complex& c2)
+{
+    Complex Y;
+
+	Y.real = c1.real * c2.real;
+	Y.imag = c1.imag * c2.imag;
+
+	std::cout<<Y.real<<" + "<<Y.imag<<"i"<<std::endl;
+	return Y;
+}
+
+Complex operator / (Complex& c1, Complex& c2)
+{
+    Complex Y;
+
+	Y.real = c1.real / c2.real;
+	Y.imag = c1.imag / c2.imag;
+
+	std::cout<<Y.real<<" + "<<Y.imag<<"i"<<std::endl;
+	return Y;
+}
+
+//====================================Arithmantic Assignment========================================//
+
+Complex operator += (Complex& c1, Complex& c2){
+	c1.real += c2.real;
+	c1.imag += c2.imag;
+
+	std::cout<<c1.real<<" + "<<c1.imag<<"i"<<std::endl;
+	return c1;
+}
+
+Complex operator -= (Complex& c1, Complex& c2){
+	c1.real -= c2.real;
+	c1.imag -= c2.imag;
+
+	std::cout<<c1.real<<" + "<<c1.imag<<"i"<<std::endl;
+	return c1;
+}
+
+Complex operator *= (Complex& c1, Complex& c2){
+	c1.real *= c2.real;
+	c1.imag *= c2.imag;
+
+	std::cout<<c1.real<<" + "<<c1.imag<<"i"<<std::endl;
+	return c1;
+}
+
+Complex operator /= (Complex& c1, Complex& c2){
+	c1.real /= c2.real;
+	c1.imag /= c2.imag;
+
+	std::cout<<c1.real<<" + "<<c1.imag<<"i"<<std::endl;
+	return c1;
+}
+
+//==================================Prefix==========================================//
+
+/*
+Complex operator ++ (Complex& c1){
+	c1.real ++;
+	c1.imag ++;
+
+	std::cout<<c1.real<<" + "<<c1.imag<<"i"<<std::endl;
+	return c1;
+}
+*/
+
+/*
+Complex operator -- (Complex& c1){
+	c1.real --;
+	c1.imag --;
+
+	std::cout<<c1.real<<" + "<<c1.imag<<"i"<<std::endl;
+	return c1;
+}
+*/
+
+Complex& Complex::operator ++ (){
+	real++;
+	imag++;
+	std::cout<<this->real<<" + "<<this->imag<<"i"<<std::endl;
+    return *this;
+}
+
+Complex& Complex::operator -- (){
+	real--;
+	imag--;
+	std::cout<<this->real<<" + "<<this->imag<<"i"<<std::endl;
+    return *this;
+}
+
+//==================================Postfix==========================================//
+
+/*
+Complex operator ++ (Complex& c1, int){
+	c1.real++;
+	c1.imag++;
+	std::cout<<c1.real<<" + "<<c1.imag<<"i"<<std::endl;
+    return c1;
+}
+*/
+/*
+Complex operator -- (Complex& c1, int){
+	c1.real--;
+	c1.imag--;
+	std::cout<<c1.real<<" + "<<c1.imag<<"i"<<std::endl;
+    return c1;
+}
+*/
+Complex& Complex::operator ++ (int){
+	real++;
+	imag++;
+	std::cout<<this->real<<" + "<<this->imag<<"i"<<std::endl;
+	return *this;
+}
+
+Complex& Complex::operator -- (int){
+	real--;
+	imag--;
+	std::cout<<this->real<<" + "<<this->imag<<"i"<<std::endl;
+	return *this;
+}
+
+//===================================Assignment=========================================//
+
+
+Complex& Complex::operator = (const Complex& c1){
+	real = c1.real;
+	imag = c1.imag;
+	std::cout<<this->real<<" + "<<this->imag<<"i"<<std::endl;
+	return *this;
+}
+
+//===================================&=========================================//
+
+int operator & (const Complex& c1, const Complex& c2){
+	int r = 0,j = 0, k = 0;
+
+	if(c1.real & c1.real)
+	{
+		r = 1;
+	}
+	if(c1.imag & c1.imag)
+    {
+		j = 1;
+	}
+
+	std::cout<<r<<" + "<<j<<"i"<<std::endl;
+
+	return (k = r+j);
+
+}
+
+//====================================Insertion and Extraction========================================//
+
+std::ostream& operator << (std::ostream& out, const Complex& c1){
+
+	out << c1.real << " + ";
+	out << c1.imag << "i" <<std::endl;
+
+	return out;
+}
+
+std::istream& operator >> (std::istream& in, Complex& c1){
+
+	std::cout<<"Enter the complex Num: ";
+	in >> c1.real;
+	in >> c1.imag;
+
+	return in;
+}
+
+//=============================================================================//
+
+
+
+int main()
+{
+	Complex C1(5,10);
+	Complex C2(20,6);
+	Complex C3;
+
+     // C1 = C2 + C1;
+     // C1 = C2 - C1;
+     // C1 = C2 * C1;
+     // C1 = C2 / C1;
+
+     // C1 += C2;
+	 // C1 -= C2;
+	 // C1 *= C2;
+	 // C1 /= C2;
+
+	 // ++C1;
+     // --C1;
+
+     // C1++;
+	 // C1--;
+
+	 // C1 = C2;
+
+	 // C3 & C2;
+
+	 // std::cout<<C2;
+
+	 // std::cin>>C3;
+	 // std::cout<<C3;
+
+	return 0;
+}
+
+
+
+

@@ -1,0 +1,40 @@
+#include <iostream>
+
+
+
+class Counter
+{
+protected:
+	uint32_t count;
+public:
+	Counter() : count(0)
+	{ }
+
+	Counter(int c) : count(c)
+	{ }
+
+	uint32_t getCount() const
+	{
+		return count;
+	}
+};
+
+
+
+
+
+
+
+int main(void)
+{
+
+
+
+
+	return 0;
+}
+
+
+
+
+

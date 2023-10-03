@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+#include <map>
+#include <algorithm>
+
+
+
+void test1(void)
+{
+	std::vector<int> nums{10,20,30,40,50};
+
+	std::for_each(nums.begin(), nums.end(), [](auto x){ std::cout<<x<<" "; })
+}
+
+
+
+
+
+
+
+
+int main(void)
+{
+
+	test1();
+
+
+	return 0;
+}
+
+
+

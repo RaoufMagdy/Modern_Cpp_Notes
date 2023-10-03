@@ -1,0 +1,130 @@
+#include <iostream>
+using namespace std;
+
+/*
+
+////////////////////////////////////////////////////////////////
+class Base //base class
+{
+public:
+	void virtual show() //normal function
+	{ cout << "Base\n"; }
+};
+////////////////////////////////////////////////////////////////
+class Derv1 : public Base //derived class 1
+{
+public:
+	void show()
+	{ cout << "Derv1\n"; }
+};
+////////////////////////////////////////////////////////////////
+class Derv2 : public Base //derived class 2
+{
+public:
+	void show()
+	{ cout << "Derv2\n"; }
+};
+////////////////////////////////////////////////////////////////
+int main()
+{
+	Derv1 dv1; //object of derived class 1
+	Derv2 dv2; //object of derived class 2
+	Base* ptr; //pointer to base class
+
+	ptr = &dv1; //put address of dv1 in pointer
+	ptr->show(); //execute show()
+
+	ptr = &dv2; //put address of dv2 in pointer
+	ptr->show(); //execute show()
+
+	return 0;
+}
+
+*/
+/*
+ *  But wait—how can we get away with this? Doesn’t the compiler complain that we’re assigning
+ *	an address of one type (Derv1) to a pointer of another (Base)? On the contrary, the compiler is
+ *	perfectly happy, because type checking has been relaxed in this situation, for reasons that will
+ *	become apparent soon. The rule is that pointers to objects of a derived class are typecompatible
+ *	with pointers to objects of the base class.
+ *
+ *
+ *	Which of the show() functions is called here? The output from the program answers these
+	questions:
+
+	Base
+	Base
+
+
+	As you can see, the function in the base class is always executed. The compiler ignores the
+	contents of the pointer ptr and chooses the member function that matches the type of the
+	pointer.
+
+
+	if we added the keyword "virtual" before the function in Base class it would output the content
+	of the derived classes using pointer to base class. (Derv1 Derv2).
+
+	This happened by the same function call "show()" which is the objective of the "Virtual Function".
+ *
+ */
+
+
+
+////////////////////////////////////////////////////////////////
+class Base //base class
+{
+public:
+	void virtual show() //normal function
+	{ cout << "Base\n"; }
+};
+////////////////////////////////////////////////////////////////
+class Derv1 : public Base //derived class 1
+{
+public:
+	void show()
+	{ cout << "Derv1\n"; }
+};
+////////////////////////////////////////////////////////////////
+class Derv2 : public Base //derived class 2
+{
+public:
+	void show()
+	{ cout << "Derv2\n"; }
+};
+
+class Derv3 : public Derv1
+{
+    public:
+	void show()
+	{ cout << "Derv3\n"; }
+};
+////////////////////////////////////////////////////////////////
+int main()
+{
+	Derv1 dv1; //object of derived class 1
+	Derv2 dv2; //object of derived class 2
+	Base* ptr; //pointer to base class
+
+	Derv3 dv3;
+    Derv1* ptr2;
+
+	ptr = &dv1; //put address of dv1 in pointer
+	ptr->show(); //execute show()
+
+	ptr = &dv2; //put address of dv2 in pointer
+	ptr->show(); //execute show()
+
+    ptr2 = &dv3;
+    ptr2 -> show();
+
+    ptr =&dv3;
+    ptr -> show();
+
+	return 0;
+}
+
+
+
+
+
+

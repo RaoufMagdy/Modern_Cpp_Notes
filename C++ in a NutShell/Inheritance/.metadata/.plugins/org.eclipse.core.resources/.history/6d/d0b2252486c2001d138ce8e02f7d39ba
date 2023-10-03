@@ -1,0 +1,32 @@
+#include <iostream>
+
+
+
+class Counter
+{
+protected:
+	uint32_t count;
+public:
+	Counter : count(0)
+	{ }
+};
+
+
+
+
+
+
+
+int main(void)
+{
+
+
+
+
+	return 0;
+}
+
+
+
+
+

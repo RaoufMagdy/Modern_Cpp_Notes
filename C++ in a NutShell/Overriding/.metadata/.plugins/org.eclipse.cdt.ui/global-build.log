@@ -1,0 +1,68 @@
+20:56:20 **** Incremental Build of configuration Debug for project Overriding ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Overriding.exe main.o 
+Info: Nothing to build for Overriding
+20:56:53 **** Incremental Build of configuration Debug for project Overriding ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Overriding.exe main.o 
+20:57:02 **** Incremental Build of configuration Debug for project Overriding ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Overriding.exe main.o 
+21:13:07 **** Incremental Build of configuration Debug for project Overriding ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:11:16: error: invalid use of non-static data member 'Stack::MAX'
+   11 |         int st[MAX]; //stack: array of integers
+      |                ^~~
+..\main.cpp:10:19: note: declared here
+   10 |         const int MAX = 3; //size of stack array
+      |                   ^~~
+..\main.cpp: In member function 'void Stack::push(int)':
+..\main.cpp:17:11: error: 'st' was not declared in this scope; did you mean 'std'?
+   17 |         { st[++top] = var; }
+      |           ^~
+      |           std
+..\main.cpp: In member function 'int Stack::pop()':
+..\main.cpp:19:18: error: 'st' was not declared in this scope; did you mean 'std'?
+   19 |         { return st[top--]; }
+      |                  ^~
+      |                  std
+21:13:22 **** Incremental Build of configuration Debug for project Overriding ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:11:16: error: invalid use of non-static data member 'Stack::MAX'
+   11 |         int st[MAX]; //stack: array of integers
+      |                ^~~
+..\main.cpp:10:13: note: declared here
+   10 |         int MAX = 3; //size of stack array
+      |             ^~~
+..\main.cpp: In member function 'void Stack::push(int)':
+..\main.cpp:17:11: error: 'st' was not declared in this scope; did you mean 'std'?
+   17 |         { st[++top] = var; }
+      |           ^~
+      |           std
+..\main.cpp: In member function 'int Stack::pop()':
+..\main.cpp:19:18: error: 'st' was not declared in this scope; did you mean 'std'?
+   19 |         { return st[top--]; }
+      |                  ^~
+      |                  std
+21:13:47 **** Incremental Build of configuration Debug for project Overriding ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:20: error: ISO C++ forbids in-class initialization of non-const static member 'Stack::MAX'
+   10 |         static int MAX = 3; //size of stack array
+      |                    ^~~
+..\main.cpp:11:16: error: size of array 'st' is not an integral constant-expression
+   11 |         int st[MAX]; //stack: array of integers
+      |                ^~~
+21:14:14 **** Incremental Build of configuration Debug for project Overriding ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Overriding.exe main.o 
+21:14:35 **** Incremental Build of configuration Debug for project Overriding ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Overriding.exe main.o 

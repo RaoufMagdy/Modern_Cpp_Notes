@@ -1,0 +1,51 @@
+#include <iostream>
+
+
+/*
+
+  Composition Example : Consider the example of a Car and an engine that is very specific to that car
+  (meaning it cannot be used in any other car). This type of relationship between Car and SpecificEngine
+  class is called Composition. An object of the Car class cannot exist without an object of SpecificEngine
+  class and object of SpecificEngine has no significance without Car class.
+  To put in simple words Car class solely "owns" the SpecificEngine class.
+
+*/
+
+
+
+class Engine{
+public:
+	Engine()
+	{
+		std::cout<<"Specific Engine for CarA"<<std::endl;
+	}
+
+	~Engine(){}
+};
+
+
+class CarA{
+private:
+	Engine CarEngine;
+public:
+	CarA()
+	{
+		std::cout<<"Starting Engine"<<std::endl;
+		CarEngine;
+	}
+
+	~CarA(){}
+};
+
+
+
+
+
+int main(void)
+{
+	CarA car;
+
+	return 0;
+}
+
+

@@ -1,0 +1,157 @@
+#include <iostream>
+
+
+
+/*
+//Function Templates:
+
+using namespace std;
+//--------------------------------------------------------------
+template <class T> //function template
+T abs(T n)
+{
+	return (n < 0) ? -n : n;
+}
+//--------------------------------------------------------------
+int main()
+{
+  int int1 = 5;
+  int int2 = -6;
+  long lon1 = 70000L;
+  long lon2 = -80000L;
+  double dub1 = 9.95;
+  double dub2 = -10.15;
+  //calls instantiate functions
+  cout << "\nabs(" << int1 << ")=" << abs(int1); //abs(int)
+  cout << "\nabs(" << int2 << ")=" << abs(int2); //abs(int)
+  cout << "\nabs(" << lon1 << ")=" << abs(lon1); //abs(long)
+  cout << "\nabs(" << lon2 << ")=" << abs(lon2); //abs(long)
+  cout << "\nabs(" << dub1 << ")=" << abs(dub1); //abs(double)
+  cout << "\nabs(" << dub2 << ")=" << abs(dub2); //abs(double)
+  cout << endl;
+
+  return 0;
+}
+
+*/
+
+/*
+//Class Templates:
+
+using namespace std;
+const int MAX = 100; //size of array
+////////////////////////////////////////////////////////////////
+template <class Type>
+class Stack
+{
+private:
+	Type st[MAX]; //stack: array of any type
+	int top; //number of top of stack
+public:
+	Stack() //constructor
+	{ top = -1; }
+	void push(Type var) //put number on stack
+	{ st[++top] = var; }
+	Type pop() //take number off stack
+	{ return st[top--]; }
+};
+////////////////////////////////////////////////////////////////
+int main()
+{
+	Stack<float> s1; //s1 is object of class Stack<float>
+	s1.push(1111.1F); //push 3 floats, pop 3 floats
+	s1.push(2222.2F);
+	s1.push(3333.3F);
+	cout << "1: " << s1.pop() << endl;
+	cout << "2: " << s1.pop() << endl;
+	cout << "3: " << s1.pop() << endl;
+	Stack<long> s2; //s2 is object of class Stack<long>
+	s2.push(123123123L); //push 3 longs, pop 3 longs
+	s2.push(234234234L);
+	s2.push(345345345L);
+	cout << "1: " << s2.pop() << endl;
+	cout << "2: " << s2.pop() << endl;
+	cout << "3: " << s2.pop() << endl;
+	Stack<unsigned int> s3;
+	s3.push(55555555);
+	s3.push(44444444);
+	cout<<"1: "<<s3.pop()<<endl;
+	cout<<"2: "<<s3.pop()<<endl;
+
+	return 0;
+}
+
+*/
+
+//Exceptions:
+
+using namespace std;
+
+#define MAX 3
+
+class Stack
+{
+private:
+	int st[MAX]; //stack: array of integers
+	int top; //index of top of stack
+public:
+	class Full { }; //exception class
+	class Empty { }; //exception class
+//--------------------------------------------------------------
+	Stack() //constructor
+	{ top = -1; }
+//--------------------------------------------------------------
+	void push(int var) //put number on stack
+	{
+		if(top >= MAX-1) //if stack full,
+			throw Full(); //throw Full exception
+		st[++top] = var;
+	}
+
+	//--------------------------------------------------------------
+	int pop() //take number off stack
+	{
+		if(top < 0) //if stack empty,
+			throw Empty(); //throw Empty exception
+		return st[top--];
+	}
+	};
+	////////////////////////////////////////////////////////////////
+int main()
+{
+	Stack s1;
+	try
+	{
+			s1.push(11);
+			s1.push(22);
+			s1.push(33);
+			// s1.push(44); //oops: stack full
+			cout << "1: " << s1.pop() << endl;
+			cout << "2: " << s1.pop() << endl;
+			cout << "3: " << s1.pop() << endl;
+			cout << "4: " << s1.pop() << endl; //oops: stack empty
+	}
+	catch(Stack::Full)
+	{
+		cout << "Exception: Stack Full" << endl;
+	}
+	catch(Stack::Empty)
+	{
+		cout << "Exception: Stack Empty" << endl;
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

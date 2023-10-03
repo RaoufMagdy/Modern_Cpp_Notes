@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Stateless_LamdaExpressions&apos; to &apos;Stateless_LambdaExpressions&apos;" description="Rename resource &apos;Stateless_LamdaExpressions&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Stateless_LamdaExpressions" name="Stateless_LambdaExpressions" stamp="1679410818658" updateReferences="true"/>
+</session>

@@ -1,0 +1,61 @@
+#include <iostream>
+
+
+
+class Counter  /* Base Class */
+{
+protected:
+	uint32_t count;
+public:
+	Counter() : count(0)
+	{ }
+
+	Counter(int c) : count(c)
+	{ }
+
+	uint32_t getCount() const
+	{
+		return count;
+	}
+
+	Counter operator ++ ()
+	{
+		return Counter(++count);
+	}
+};
+
+
+
+class CountDn : public Counter  /* Derived Class */
+{
+public:
+	Counter operator -- ()
+	{
+		return Counter(--count);
+	}
+};
+
+
+
+int main(void)
+{
+
+	CountDn c1; //c1 of class CountDn
+	std::cout << "\nc1=" << c1.getCount(); //display c1
+
+	++c1; ++c1; ++c1; //increment c1, 3 times
+	std::cout << "\nc1=" << c1.getCount(); //display it
+
+	--c1; --c1; //decrement c1, twice
+	std::cout << "\nc1=" << c1.getCount(); //display it
+
+	std::cout << std::endl;
+
+
+	return 0;
+}
+
+
+
+
+

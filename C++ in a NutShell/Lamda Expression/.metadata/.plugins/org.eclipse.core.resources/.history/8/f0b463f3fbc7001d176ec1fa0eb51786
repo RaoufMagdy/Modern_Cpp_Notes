@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+
+
+
+
+
+//[captured_variables] () -> return_type { /* Code */ };
+//         |
+//     Defines what information/variables should be captured.
+
+
+// Data (variables) can be either captured by value or by reference
+// Note that if we want to capture that variable by value and modify it inside the lambda we need to write the keyword "mutable"
+// Ex: [x] () mutable {x += 100; std::cout<<x<<std::endl;}();
+
+
+
+int main(void)
+{
+
+	int x = 100;
+
+	//capture by value:
+	[x] () mutable {x+=100; std::cout<<x<<std::endl;}(); //outputs 200
+	std::cout<<x<<std::endl; //outputs 100
+
+	[&x] ()
+
+	return 0;
+}
+
+
+

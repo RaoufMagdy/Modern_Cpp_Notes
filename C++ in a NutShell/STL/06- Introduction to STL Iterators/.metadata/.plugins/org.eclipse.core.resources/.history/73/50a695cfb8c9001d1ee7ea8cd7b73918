@@ -1,0 +1,20 @@
+#include <iostream>
+
+
+
+
+// Declaring iterators:
+// Iterators must be declared based on the container type they will iterate over
+
+
+
+
+
+int main(void)
+{
+
+
+	return 0;
+}
+
+
